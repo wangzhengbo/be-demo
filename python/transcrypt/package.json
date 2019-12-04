@@ -1,0 +1,17 @@
+{
+  "name": "transcrypt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "transcrypt -n hello.py",
+    "pretest": "npm run build",
+    "test": "node -r esm __target__/hello.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esm": "^3.2.25"
+  }
+}
